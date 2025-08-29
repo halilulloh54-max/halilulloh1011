@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Container and Flexbox</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #d16a53;
+      margin: 0;
+      padding: 20px;
+      color: #fff;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .top-links {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 20px;
+      font-size: 14px;
+    }
+    .top-links a {
+      color: #00eaff;
+      text-decoration: none;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+    }
+
+    .card {
+      background: #000;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+      text-align: center;
+      font-size: 12px;
+    }
+
+    .card img {
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .card h2 {
+      margin: 8px 0;
+      font-size: 16px;
+      color: #fff;
+    }
+
+    .card p {
+      padding: 0 8px 10px;
+      color: #bbb;
+      line-height: 1.3;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>CONTAINER AND FLEXBOX</h1>
+  <div class="top-links">
+    <a href="#">space-between</a>
+    <a href="#">space-around</a>
+    <a href="#">space-evenly</a>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <img src="flexbox.jpg" alt="Flexbox">
+      <h2>FlexBox</h2>
+      <p>Flexbox container joylashtirishda muhim vosita.</p>
+    </div>
+
+    <div class="card">
+      <img src="container.jpg" alt="Container">
+      <h2>Container</h2>
+      <p>CSS containerlari elementlarni guruhlash uchun ishlatiladi.</p>
+    </div>
+
+    <div class="card">
+      <img src="space-evenly.jpg" alt="Space Evenly">
+      <h2>space-evenly</h2>
+      <p>Elementlarni teng oraliqda joylashtiradi.</p>
+    </div>
+
+    <div class="card">
+      <img src="space-between.jpg" alt="Space Between">
+      <h2>space-between</h2>
+      <p>Birinchi element chapga, oxirgisi o‘ngga joylashadi.</p>
+    </div>
+
+    <div class="card">
+      <img src="align-items.jpg" alt="Align Items">
+      <h2>align-items</h2>
+      <p>Elementlarni vertikal joylashtirish imkonini beradi.</p>
+    </div>
+
+    <div class="card">
+      <img src="flexbox2.jpg" alt="Flexbox Example">
+      <h2>FlexBox</h2>
+      <p>Joylashtirishda bir necha qulayliklarga ega bo‘lamiz.</p>
+    </div>
+  </div>
+
+</body>
+</html>
